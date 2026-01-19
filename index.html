@@ -5,13 +5,15 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="./css/banner.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/53802153?v=4">
     <title>Assignment 2</title>
 </head>
 <body class="bg-gray-900">
-    <!-- NAVBAR -->
+    <!-- Navbar Section -->
     <nav class="bg-[#1A0B2E] p-4 shadow-sm border-b border-[#4D3C6B]">
         <div class="container mx-auto flex justify-between items-center">
             <!-- Logo -->
@@ -53,5 +55,48 @@
             </div>
         </div>
     </nav>
+
+    <!-- Banner Section -->
+    <section class="w-full bg-[url('./assets/hero-bg.png')] bg-cover bg-center bg-no-repeat min-h-screen" >
+
+        <!-- Content -->
+        <div class="container mx-auto flex flex-col items-center justify-center text-center relative z-20 py-16 px-6">
+
+            <!-- Podcast Circle with Mic -->
+            <div class="relative mb-10 group">
+                <div class="relative inline-block">
+                    <!-- Larger Circle -->
+                    <img src="./assets/hero-circle.png" alt="Podcast Circle" class="w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 object-contain" />
+
+                    <!-- Microphone -->
+                    <img src="./assets/microphone.png" alt="Microphone" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 sm:w-28 sm:h-28 md:w-36 md:h-36 object-contain" />
+
+                    <p class="new-badge-custom absolute top-2.5 right-[-32px] lg:top-6 lg:right-[-5px] text-[#1A0B2E] rounded-[25px] px-6 py-2.5 font-Inter">
+                        NEW
+                    </p>
+                </div>
+            </div>
+
+            <h1 class="text-3xl sm:text-4xl md:text-6xl font-black text-white mb-4 tracking-tight">TechWave</h1>
+
+            <p class="text-gray-300 text-sm sm:text-base md:text-lg max-w-md md:max-w-xl mb-10 leading-relaxed">
+                Your daily dose of tech insights, productivity hacks, and personal growth
+            </p>
+
+            <div class="flex flex-col justify-center items-center py-2">
+                <div class="flex justify-center items-center gap-4 w-full max-w-[360px] px-2">
+                    <button class="btn-spotify font-Inter flex items-center justify-center gap-2 px-5 py-3 min-h-[48px] flex-[1.2] whitespace-nowrap overflow-hidden">
+                        <img src="./assets/banner-spotify.png" alt="Spotify" class="h-5 w-5 sm:h-6 sm:w-6 flex-shrink-0" />
+                        <span class="text-xs sm:text-sm font-semibold">Listen on Spotify</span>
+                    </button>
+                    <button class="btn-subscribe font-Inter flex items-center justify-center gap-2 px-5 py-3 min-h-[48px] flex-1 whitespace-nowrap">
+                        <img src="./assets/message.png" alt="Subscribe" class="h-5 w-5 sm:h-6 sm:w-6 flex-shrink-0" />
+                        <span class="text-xs sm:text-sm font-semibold">Subscribe</span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
 </body>
 </html>
