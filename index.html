@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/navbar.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="https://avatars.githubusercontent.com/u/53802153?v=4">
+    <title>Assignment 2</title>
+</head>
+<body class="bg-gray-900">
+    <!-- NAVBAR -->
+    <nav class="bg-[#1A0B2E] p-4 shadow-sm border-b border-[#4D3C6B]">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Logo -->
+            <div class="flex items-center ">
+                <span class="nav-logo-text">Tech</span><span class="nav-logo">Wave</span>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden lg:flex space-x-8 justify-center flex-grow menu-text">
+                <a href="#" class="text-white hover:text-gray-300 transition">About</a>
+                <a href="#" class="text-white hover:text-gray-300 transition">Episodes</a>
+                <a href="#" class="text-white hover:text-gray-300 transition">Host</a>
+            </div>
+
+            <!-- Gradient Button -->
+            <div class="hidden lg:block">
+                <button class="gradient-btn px-5 py-2 flex items-center space-x-1 rounded-full">
+                    <span>Subscribe</span>
+                    <img src="./assets/ArrowRight.png">
+                </button>
+            </div>
+
+            <!-- Mobile Hamburger -->
+            <div class="lg:hidden relative">
+                <label for="mobile-menu-toggle" class="cursor-pointer block">
+                    <img src="./assets/hamburger-menu.png">
+                </label>
+                <input type="checkbox" id="mobile-menu-toggle" class="hidden peer" />
+
+                <!-- Mobile Menu Dropdown -->
+                <div class="absolute top-full right-0 mt-2 bg-[#1A0B2E] shadow-lg rounded-b-lg py-4 px-6 space-y-4 opacity-0 invisible peer-checked:opacity-100 peer-checked:visible transition-all duration-300 ease-in-out z-10 w-48">
+                    <a href="#" class="block text-white hover:text-gray-300 transition">About</a>
+                    <a href="#" class="block text-white hover:text-gray-300 transition">Episodes</a>
+                    <a href="#" class="block text-white hover:text-gray-300 transition">Host</a>
+                    <button>
+                        <a href="#" class="block text-white hover:text-gray-300 transition">Subscribe</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>
