@@ -10,7 +10,7 @@
 .nav-logo-text {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 36px;
     color: white;
     display: inline-block;
 
@@ -19,7 +19,7 @@
 .nav-logo {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 36px;
     background: linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
