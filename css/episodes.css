@@ -1,0 +1,135 @@
+.pod-container {
+    width: 75%;
+    margin: 0 auto;
+    padding: 120px 0;
+}
+
+.pod-flex-stack {
+    display: flex;
+    gap: 30px;
+}
+
+.pod-entry {
+    background-color: #250D44;
+    border-radius: 24px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pod-entry:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.pod-video-wrapper {
+    position: relative;
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-color: #000;
+    overflow: hidden;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pod-video-wrapper:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.pod-video-poster {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.pod-video-wrapper:hover .pod-video-poster {
+    opacity: 1;
+}
+
+.pod-custom-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    z-index: 10;
+    transition: transform 0.2s ease-in-out;
+}
+
+.pod-video-wrapper:hover .pod-custom-play {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.pod-content {
+    padding: 24px;
+}
+
+.pod-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    margin: 16px 0;
+}
+
+.pod-text {
+    line-height: 20px;
+    opacity: 0.6;
+    margin-bottom: 32px;
+    color: white;
+}
+
+.pod-meta {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #00FF88;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 992px) {
+    .pod-flex-stack {
+        flex-direction: column;
+    }
+
+    .pod-entry {
+        flex-direction: row;
+    }
+
+    .pod-video-box {
+        width: 200px;
+        flex-shrink: 0;
+    }
+
+    .pod-video-box iframe {
+        height: 100%;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 24px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .pod-container {
+        width: 90%;
+    }
+
+    .pod-entry {
+        flex-direction: column;
+    }
+
+    .pod-video-box {
+        width: 100%;
+    }
+
+    .pod-video-box iframe {
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 24px;
+    }
+}
